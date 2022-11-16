@@ -1,1 +1,24 @@
-
+[[Hacking]]
+  [[Networks]]
+    #[[TCP/IP Model]]
+      What is it?
+        TCP (Transmission Control Protocol) means it will be a controlled flow of data between two endpoints.
+        IP (Internet Protocol) states how the packets are addressed and sent.
+        
+        Before sending data via TCP, you must establish and maintain a connection with a three-way handshake. 
+        This process starts with the client sending a request called a SYN (SYNchronise) bit. 
+        The server then should send a the same SYN bit back as well as an ACKnowledgement, known as an ACK.
+        Finally, the client sends the ACK bit back to the server, successfully completing the three-way handshake.
+        Using this method, the Client and Server both send information to eachother confirming the request.
+        No TCP connection is established without the successful completion of a three-way handshake.
+      https://muirlandoracle.co.uk/wp-content/uploads/2020/03/image-2.png
+      Layers
+        https://muirlandoracle.co.uk/wp-content/uploads/2020/02/image-3.png
+      
+  [[Useful Commands]]
+    ping {address}
+      Sends ICMP ECHO_REQUEST's to a specified network host
+    traceroute {address}
+      prints the route pakcets trace to a specified network host
+    whois {address}
+      Returns records of data related to specified network host
